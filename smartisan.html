@@ -7,9 +7,9 @@
     <meta name="discription" content="锤子科技是一家制造移动互联网终端设备的公司，公司的使命是用完美主义的工匠精神，打造用户体验一流的数码消费类产品（智能手机为主），改善人们的生活质量。">
     <title>官方在线商城 - smartisan</title>
     <link href="images/ico/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="product-panel.css">
-    <link rel="stylesheet" href="smartisan.css">
-    <link rel="stylesheet" href="dot-color.css">
+    <link rel="stylesheet" href="css/product-panel.css">
+    <link rel="stylesheet" href="css/smartisan.css">
+    <link rel="stylesheet" href="css/dot-color.css">
 </head>
 
 <body>
@@ -865,39 +865,9 @@
     <div class="go-top"></div>
 
     <!-- <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script> -->
-    <script src="jquery-3.1.0.min.js"></script>
-    <script src="product-panel.js"></script>
-    <script src="banner3d.js"></script>
-    <script>
-        new Banner3D($('.banner3d'));
-        new ProductPanel($('.product-list'));
 
-        $('.shadow-style>.shadow-ul').on('mouseenter', 'li', function() {
-            $(this).css({
-                "box-shadow": " 0 0 38px rgba(0,0,0,.08) inset"
-            });
-        })
-        $('.shadow-style>.shadow-ul').on('mouseleave', 'li', function() {
-            $(this).css({
-                "box-shadow": " 0 0 0 rgba(0,0,0,0) inset"
-            });
-        })
-        $('.panel-ct .app-list').on('mouseenter', 'li', function() {
-            $(this).find('.operation').fadeIn(150);
-        })
-        $('.panel-ct .app-list').on('mouseleave', 'li', function() {
-            $(this).find('.operation').fadeOut(150);
-        })
-        $('.main nav .cart').on('mouseenter', function() {
-            $('.main nav .cart .cart-panel').fadeIn(100);
-        })
-        $('.main nav .cart').on('mouseleave', function() {
-            $('.main nav .cart .cart-panel').fadeOut(100);
-        })
-        $('a').click(function(e) {
-            e.preventDefault();
-        })
-    </script>
+    <script src="js/lib/require.js" data-main="js/app.js"></script>
+
 </body>
 
 </html>

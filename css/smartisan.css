@@ -37,13 +37,13 @@ h1,h2,h3,h4,h5,h6 {
 .header {
     min-width: 1240px;
     height: 100px;
-    background: url(images/sub/header-black-bg.png) no-repeat center;
+    background: url(../images/sub/header-black-bg.png) no-repeat center;
 }
 .header .container .logo {
     float: left;
     width: 40px;
     height: 40px;
-    background-image: url(images/logo/logo.png);
+    background-image: url(../images/logo/logo.png);
     background-position: -5px -5px;
     margin: 30px 0;
     cursor: pointer;
@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    background-image: url(images/sprite/btn-icon.png);
+    background-image: url(../images/sprite/btn-icon.png);
     background-repeat: no-repeat;
     background-position: -10px -466px;
 }
@@ -191,12 +191,12 @@ h1,h2,h3,h4,h5,h6 {
     right: 25px;
     width: 14px;
     height: 8px;
-    background: url(images/sprite/cart-arrow.png) no-repeat center;
+    background: url(../images/sprite/cart-arrow.png) no-repeat center;
 }
 .main nav .cart .cart-panel .cart-box {
     width: 312px;
     padding-top: 115px;
-    background-image: url(images/sub/cart-empty.png);
+    background-image: url(../images/sub/cart-empty.png);
     background-repeat: no-repeat;
     background-position:center 35px;
 }
@@ -250,7 +250,7 @@ h1,h2,h3,h4,h5,h6 {
     bottom: -60px;
     left: -60px;
     right: -60px;
-    background-image: url(images/banner/banner-3d-shadow_ab4cdb6403.png);
+    background-image: url(../images/banner/banner-3d-shadow_ab4cdb6403.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -286,15 +286,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .banner3d .banner-1 .box-1 {
-    background-image: url(images/banner/banner-3d-item-m11-box-1_851af2cb7b.png);
+    background-image: url(../images/banner/banner-3d-item-m11-box-1_851af2cb7b.png);
 }
 
 .banner3d .banner-2 .box-1 {
-    background-image: url(images/banner/banner-3d-item-m12-box-1_ceefc9047f.png);
+    background-image: url(../images/banner/banner-3d-item-m12-box-1_ceefc9047f.png);
 }
 
 .banner3d .banner-3 .box-1 {
-    background-image: url(images/banner/banner-3d-item-m13-box-1_7b2d6bc9b9.png);
+    background-image: url(../images/banner/banner-3d-item-m13-box-1_7b2d6bc9b9.png);
 }
 
 .banner3d .banner .box-2 {
@@ -306,15 +306,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .banner3d .banner-1 .box-2 {
-    background-image: url(images/banner/banner-3d-item-m11-box-2_7826937752.png);
+    background-image: url(../images/banner/banner-3d-item-m11-box-2_7826937752.png);
 }
 
 .banner3d .banner-2 .box-2 {
-    background-image: url(images/banner/banner-3d-item-m12-box-2_e07ca5ce17.png);
+    background-image: url(../images/banner/banner-3d-item-m12-box-2_e07ca5ce17.png);
 }
 
 .banner3d .banner-3 .box-2 {
-    background-image: url(images/banner/banner-3d-item-m13-box-2_614a990583.png);
+    background-image: url(../images/banner/banner-3d-item-m13-box-2_614a990583.png);
 }
 
 .banner3d .banner .box-3 {
@@ -326,15 +326,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .banner3d .banner-1 .box-3 {
-    background-image: url(images/banner/banner-3d-item-m11-box-3_8c4e767947.png);
+    background-image: url(../images/banner/banner-3d-item-m11-box-3_8c4e767947.png);
 }
 
 .banner3d .banner-2 .box-3 {
-    background-image: url(images/banner/banner-3d-item-m12-box-3_aa183e9159.png);
+    background-image: url(../images/banner/banner-3d-item-m12-box-3_aa183e9159.png);
 }
 
 .banner3d .banner-3 .box-3 {
-    background-image: url(images/banner/banner-3d-item-m13-box-3_0254a95aca.png);
+    background-image: url(../images/banner/banner-3d-item-m13-box-3_0254a95aca.png);
 }
 
 .banner3d .move-right {
@@ -356,7 +356,7 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
     height: 18px;
     width: 18px;
-    background-image: url(images/sprite/bullet.png);
+    background-image: url(../images/sprite/bullet.png);
     background-size: cover;
     background-position: 0px 0px;
     cursor: pointer;
@@ -389,20 +389,20 @@ h1,h2,h3,h4,h5,h6 {
     background-position: center center;
 }
 .activity-panel .box .box1{
-    background-image: url(images/activity/2014shanghai.jpg);
+    background-image: url(../images/activity/2014shanghai.jpg);
     border-radius: 8px 0 0 8px;
 }
 .activity-panel .box .box1 a{
     border-radius: 8px 0 0 8px;
 }
 .activity-panel .box .box2{
-    background-image: url(images/activity/smartisanos.jpg);
+    background-image: url(../images/activity/smartisanos.jpg);
 }
 .activity-panel .box .box3{
-    background-image: url(images/activity/smartisant2.jpg);
+    background-image: url(../images/activity/smartisant2.jpg);
 }
 .activity-panel .box .box4{
-    background-image: url(images/activity/acessories.jpg);
+    background-image: url(../images/activity/acessories.jpg);
     border-radius: 0 8px 8px 0;
 }
 .activity-panel .box .box4 a{
@@ -469,19 +469,19 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
 }
 .dot-color-1 {
-    background: url(images/color/hot-product/1.jpg) no-repeat center center;
+    background: url(../images/color/hot-product/1.jpg) no-repeat center center;
 }
 .dot-color-2 {
-    background: url(images/color/hot-product/2.jpg) no-repeat center center;
+    background: url(../images/color/hot-product/2.jpg) no-repeat center center;
 }
 .dot-color-3 {
-    background: url(images/color/hot-product/3.jpg) no-repeat center center;
+    background: url(../images/color/hot-product/3.jpg) no-repeat center center;
 }
 .dot-color-4 {
-    background: url(images/color/hot-product/4.jpg) no-repeat center center;
+    background: url(../images/color/hot-product/4.jpg) no-repeat center center;
 }
 .dot-color-5 {
-    background: url(images/color/hot-product/5.jpg) no-repeat center center;
+    background: url(../images/color/hot-product/5.jpg) no-repeat center center;
 }
 
 /* official-recommend */
@@ -499,10 +499,10 @@ h1,h2,h3,h4,h5,h6 {
     width: 610px;
 }
 .recommend .recommend-panel .official-recommend-1 {
-    background:  url(images/official-recommend/1.jpg) no-repeat center center;
+    background:  url(../images/official-recommend/1.jpg) no-repeat center center;
 }
 .recommend .recommend-panel .brand-recommend-1 {
-    background:  url(images/brand-recommend/1.jpg) no-repeat center center;
+    background:  url(../images/brand-recommend/1.jpg) no-repeat center center;
 }
 .recommend .line-inset .linex {
     width: 100%;
@@ -542,17 +542,17 @@ h1,h2,h3,h4,h5,h6 {
     background-size: contain;
 }
 .dynamic-state .dynamic-1 {
-    background: url(images/dynamic-state/1.jpg) no-repeat center center;
+    background: url(../images/dynamic-state/1.jpg) no-repeat center center;
     border-radius: 0 0 0 8px;
 }
 .dynamic-state .dynamic-2 {
-    background: url(images/dynamic-state/2.jpg) no-repeat center center;
+    background: url(../images/dynamic-state/2.jpg) no-repeat center center;
 }
 .dynamic-state .dynamic-3 {
-    background: url(images/dynamic-state/3.jpg) no-repeat center center;
+    background: url(../images/dynamic-state/3.jpg) no-repeat center center;
 }
 .dynamic-state .dynamic-4 {
-    background: url(images/dynamic-state/4.jpg) no-repeat center center;
+    background: url(../images/dynamic-state/4.jpg) no-repeat center center;
     border-radius: 0 0 8px 0;
 }
 
@@ -618,7 +618,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 72px auto;
     width: 90px;
     height: 90px;
-    background-image: url(images/app-panel/app-icon-sprite.png);
+    background-image: url(../images/app-panel/app-icon-sprite.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -663,16 +663,16 @@ h1,h2,h3,h4,h5,h6 {
     background-position: center;
 }
 .app-panel .app-list>li .app-style .plartform .win-logo {
-    background-image: url(images/app-panel/win.png)
+    background-image: url(../images/app-panel/win.png)
 }
 .app-panel .app-list>li .app-style .plartform .ios-logo {
-    background-image: url(images/app-panel/ios.png)
+    background-image: url(../images/app-panel/ios.png)
 }
 .app-panel .app-list>li .app-style .plartform .android-logo {
-    background-image: url(images/app-panel/android.png)
+    background-image: url(../images/app-panel/android.png)
 }
 .panel-c.app-panel .app-list>li .app-style .plartform .ios-logo {
-    background-image: url(images/app-panel/ios.png)
+    background-image: url(../images/app-panel/ios.png)
 }
 .app-panel .app-list .list-1 .app-style .app-icon {
     background-position: 0 0;
@@ -711,7 +711,7 @@ h1,h2,h3,h4,h5,h6 {
     height: 120px;
     border: 1px solid #f7f7f7;
     box-sizing: border-box;
-    background: url(images/qrcode/1.jpg) no-repeat center center;
+    background: url(../images/qrcode/1.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
 }
@@ -998,14 +998,15 @@ h1,h2,h3,h4,h5,h6 {
 .go-top {
     position: fixed;
     right: 17px;
-    bottom: 20px;
+    bottom: -55px;
     width: 54px;
     height: 54px;
-    background: url(images/sub/gotop.png) no-repeat;
+    background: url(../images/sub/gotop.png) no-repeat;
     background-size: contain;
     opacity: .62;
     cursor: pointer;
     z-index: 18;
+    transition: .2s linear;
 }
 .go-top:hover {
     opacity: 1;
