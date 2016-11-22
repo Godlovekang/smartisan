@@ -28,18 +28,18 @@
         clear: both;
     }
 
-    .test {
+    .container {
+        margin: 0 auto;
         width: 1220px;
     }
 
     .banner3d {
         position: relative;
-        margin: 150px auto;
-        padding-bottom: 41%;
         width: 100%;
+        padding-bottom: 41%;
     }
 
-    .banner-ct {
+    .banner3d .banner-ct {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -47,7 +47,7 @@
         transform-style: preserve-3d;
     }
 
-    .banner {
+    .banner3d .banner {
         display: block;
         position: absolute;
         height: 100%;
@@ -56,15 +56,15 @@
         transition: .1s linear;
     }
 
-    .banner-2 {
+    .banner3d .banner-2 {
         display: none;
     }
 
-    .banner-3 {
+    .banner3d .banner-3 {
         display: none;
     }
 
-    .banner .shadow {
+    .banner3d .banner .shadow {
         position: absolute;
         top: -60px;
         bottom: -60px;
@@ -78,11 +78,11 @@
         transition: .3s linear;
     }
 
-    .banner .active {
+    .banner3d .banner .active {
         opacity: 1;
     }
 
-    .banner .box {
+    .banner3d .banner .box {
         position: absolute;
         top: 0;
         right: 0;
@@ -93,7 +93,7 @@
         cursor: pointer;
     }
 
-    .banner .box-1 {
+    .banner3d .banner .box-1 {
         /*background-image: url(images/banner/banner-3d-item-m12-box-1_ceefc9047f.png);*/
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,19 +101,19 @@
         opacity: 1;
     }
 
-    .banner-1 .box-1 {
+    .banner3d .banner-1 .box-1 {
         background-image: url(images/banner/banner-3d-item-m11-box-1_851af2cb7b.png);
     }
 
-    .banner-2 .box-1 {
+    .banner3d .banner-2 .box-1 {
         background-image: url(images/banner/banner-3d-item-m12-box-1_ceefc9047f.png);
     }
 
-    .banner-3 .box-1 {
+    .banner3d .banner-3 .box-1 {
         background-image: url(images/banner/banner-3d-item-m13-box-1_7b2d6bc9b9.png);
     }
 
-    .banner .box-2 {
+    .banner3d .banner .box-2 {
         /*background-image: url(images/banner/banner-3d-item-m12-box-2_e07ca5ce17.png);*/
         background-repeat: no-repeat;
         background-size: cover;
@@ -121,19 +121,19 @@
         /*bottom: -25px;*/
     }
 
-    .banner-1 .box-2 {
+    .banner3d .banner-1 .box-2 {
         background-image: url(images/banner/banner-3d-item-m11-box-2_7826937752.png);
     }
 
-    .banner-2 .box-2 {
+    .banner3d .banner-2 .box-2 {
         background-image: url(images/banner/banner-3d-item-m12-box-2_e07ca5ce17.png);
     }
 
-    .banner-3 .box-2 {
+    .banner3d .banner-3 .box-2 {
         background-image: url(images/banner/banner-3d-item-m13-box-2_614a990583.png);
     }
 
-    .banner .box-3 {
+    .banner3d .banner .box-3 {
         /*background-image: url(images/banner/banner-3d-item-m12-box-3_aa183e9159.png);*/
         background-repeat: no-repeat;
         background-size: cover;
@@ -141,27 +141,27 @@
         /*bottom: -25px;*/
     }
 
-    .banner-1 .box-3 {
+    .banner3d .banner-1 .box-3 {
         background-image: url(images/banner/banner-3d-item-m11-box-3_8c4e767947.png);
     }
 
-    .banner-2 .box-3 {
+    .banner3d .banner-2 .box-3 {
         background-image: url(images/banner/banner-3d-item-m12-box-3_aa183e9159.png);
     }
 
-    .banner-3 .box-3 {
+    .banner3d .banner-3 .box-3 {
         background-image: url(images/banner/banner-3d-item-m13-box-3_0254a95aca.png);
     }
 
-    .move-right {
+    .banner3d .move-right {
         transform: translateX(3px);
     }
 
-    .move-left {
+    .banner3d .move-left {
         transform: translateX(-3px);
     }
 
-    .bullet {
+    .banner3d .bullet {
         position: absolute;
         bottom: 28px;
         left: 50%;
@@ -169,7 +169,7 @@
         /*background-color: red;*/
     }
 
-    .bullet li {
+    .banner3d .bullet li {
         float: left;
         height: 18px;
         width: 18px;
@@ -179,13 +179,13 @@
         cursor: pointer;
     }
 
-    .bullet .active {
+    .banner3d .bullet .active {
         background-position: 0px 18px;
     }
 </style>
 
 <body>
-    <div class="test">
+    <div class="container">
         <div class="banner3d">
             <ul class="banner-ct">
                 <li class="banner banner-1 show-banner">
@@ -213,91 +213,14 @@
                 <li></li>
             </ul>
         </div>
-
     </div>
 
 
 
     <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="banner3d.js"></script>
     <script>
-        var $bannerCt = $('.banner-ct'),
-            $bannerLi = $('.banner-ct li'),
-            $bullet = $('.bullet'),
-            $bulletLi = $('.banner3d .bullet li'),
-            $banner = $('.banner'),
-            $shadow = $('.shadow'),
-            $box1 = $('.box-1'),
-            $box2 = $('.box-2'),
-            $box3 = $('.box-3');
-
-        var showIndex = 0,
-            mouseon = false;
-        var clock1 = setInterval(function() {
-            if (!mouseon) {
-                $($bannerLi[showIndex]).fadeIn(1000);
-                $($bannerLi[showIndex]).siblings('li').fadeOut(1000);
-                $($bulletLi[showIndex]).addClass('active');
-                $($bulletLi[showIndex]).siblings('li').removeClass('active');
-                showIndex++;
-                if (showIndex == $bannerLi.length) {
-                    showIndex = 0;
-                }
-            }
-        }, 5000)
-
-        $bannerCt.on('mouseenter', function() {
-            mouseon = true;
-            console.log($bannerLi.length);
-            $shadow.addClass('active');
-            $banner.css({
-                "transform": "translateZ(5px)"
-            })
-        })
-
-        $bannerCt.on('mouseleave', function() {
-            mouseon = false;
-            $shadow.removeClass('active');
-            $banner.css({
-                "transform": " rotateX(0deg) rotateY(0deg) translateZ(0px)"
-            })
-
-            $box2.css({
-                "transform": "translateX(0px) translateY(0px)"
-            })
-            $box3.css({
-                "transform": "translateX(0px) translateY(0px)"
-            })
-        })
-        $shadow.mousemove(function(e) {
-            e.stopPropagation();
-        })
-        $bannerCt.mousemove(function(e) {
-            var deltaX = (e.clientX - ($bannerCt.offset().left + $bannerCt.width() * .5)) / ($bannerCt.width() * .5),
-                deltaY = (($bannerCt.offset().top + $bannerCt.height() * .5) - e.clientY) / ($bannerCt.height() * .5);
-            $banner.css({
-                "transform": " rotateX(" + (deltaY * 6) + "deg) rotateY(" + (deltaX * 8) + "deg) translateZ(5px)"
-            })
-            $shadow.css({
-                "transform": "translateX(" + (-deltaX * 30) + "px) translateY(" + (deltaY * 15) + "px)"
-            })
-            $box2.css({
-                "transform": "translateX(" + (-deltaX * 3) + "px) translateY(" + (-deltaY * 0) + "px)"
-            })
-            $box3.css({
-                "transform": "translateX(" + (deltaX * 5) + "px) translateY(" + (deltaY * 0) + "px)"
-            })
-        })
-        $bullet.on('click', 'li', function() {
-            showIndex = [].indexOf.call($bulletLi, this);
-            $($bannerLi[showIndex]).fadeIn(500);
-            $($bannerLi[showIndex]).siblings('li').fadeOut(500);
-            $($bulletLi[showIndex]).addClass('active');
-            $($bulletLi[showIndex]).siblings('li').removeClass('active');
-            showIndex++;
-            if (showIndex == $bannerLi.length) {
-                showIndex = 0;
-            }
-        })
+        new Banner3D($('.banner3d'))
     </script>
 </body>
 
